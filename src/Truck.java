@@ -1,4 +1,4 @@
-public class Truck extends someKindOfTransport {
+public class Truck extends CheakMotor {
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
@@ -7,8 +7,8 @@ public class Truck extends someKindOfTransport {
         System.out.println("Проверяем прицеп");
     }
 
-    public void serviceMotor() {
-        super.serviceMotor();
+    public void service() {
+        super.service();
         checkTrailer();
     }
 }

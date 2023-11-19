@@ -1,4 +1,4 @@
-public abstract class someKindOfTransport {
+public abstract class someKindOfTransport implements Service {
     private final String modelName;
     private final int wheelsCount;
 
@@ -19,20 +19,10 @@ public abstract class someKindOfTransport {
         System.out.println("Меняем покрышку");
     }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
-    }
-
     public void service(){
         for (int i = 0; i < getWheelsCount(); i++) {
             updateTyre();
         }
     }
 
-    public void serviceMotor(){
-        for (int i = 0; i < getWheelsCount(); i++) {
-            updateTyre();
-            checkEngine();
-        }
-    }
 }

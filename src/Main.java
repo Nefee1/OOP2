@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Main {
     public static void main(String[] args) {
         Car car = new Car("Car1", 4);
@@ -9,7 +11,7 @@ public class Main {
         Bicycle bicycle = new Bicycle("bicycle1", 2);
         Bicycle bicycle2 = new Bicycle("bicycle2", 2);
 
-        someKindOfTransport[] transport = {
+        someKindOfTransport[] transport = new someKindOfTransport[]{
                 car,
                 car2,
                 truck,
@@ -17,7 +19,7 @@ public class Main {
                 bicycle,
                 bicycle2
         };
-        ServiceStation serviceStation = new ServiceStation("Количество проверок",1);
+        ServiceStation serviceStation = new ServiceStation();
         for(someKindOfTransport someKindOfTransport : transport)
             serviceStation.check(someKindOfTransport);
     }
