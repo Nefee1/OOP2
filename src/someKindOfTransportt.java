@@ -1,8 +1,8 @@
-public abstract class someKindOfTransport implements Service {
+public abstract class someKindOfTransportt implements Maintainable {
     private final String modelName;
     private final int wheelsCount;
 
-    public someKindOfTransport(String modelName, int wheelsCount) {
+    public someKindOfTransportt(String modelName, int wheelsCount) {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
@@ -24,5 +24,4 @@ public abstract class someKindOfTransport implements Service {
             updateTyre();
         }
     }
-
 }

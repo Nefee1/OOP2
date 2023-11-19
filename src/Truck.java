@@ -1,4 +1,4 @@
-public class Truck extends CheakMotor {
+public class Truck extends CheakMotorr {
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }

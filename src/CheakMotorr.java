@@ -1,5 +1,5 @@
-public abstract class CheakMotor extends someKindOfTransport{
-    public CheakMotor(String modelName, int wheelsCount) {
+public abstract class CheakMotorr extends someKindOfTransportt {
+    public CheakMotorr(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
 
